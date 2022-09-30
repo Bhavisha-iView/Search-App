@@ -90,17 +90,7 @@ const SearchPage = () => {
     else if(!localStorage.getItem('signup')){
       navigate('/')
     }
-    },[])
-
-    // data.length === 0 && store.searchReducer.loading ?
-
-    //       console.log('loading') :console.log(data)
-
-          // console.log(data.length)
-
-
-          console.log(window.scrollbars && console.log('yes'))
-
+    },[]) 
 
   return ( 
         <div>
