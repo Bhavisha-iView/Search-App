@@ -1,0 +1,50 @@
+
+nav{
+    height: 100px;
+    background-color: rgb(215, 210, 210);
+  }
+  
+  .logout{
+    margin-left: 4%;
+  }
+  
+  .page-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+    margin-left: 20%;
+    margin-right: 5%;
+    /* border: 1px solid black; */
+  }
+  
+  .page-links > div{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+  }
+  
+  .page-links > div > ul > .nav-item:hover{
+    background-color: rgb(98, 93, 88);
+    color: white;
+    padding: 0px;
+    border-radius: 20px;
+  }
+  
+  .nameOfUser{
+    font-size: xx-large;
+    font-family: 'Pacifico', cursive;
+    color: black;
+  }
+  
+  .img-grid{
+    width: 200px;
+    height: 200px;
+  }
+
+  .logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
