@@ -138,7 +138,7 @@ const SearchPage = () => {
         currentPage={currentPage}
         totalCount={data.length}
         pageSize={PageSize}
-        onPageChange={(page : any) => setCurrentPage(page)}
+        onPageChange={(page : number) => setCurrentPage(page)}
       />
 
           </div>

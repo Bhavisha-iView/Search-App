@@ -27,7 +27,7 @@ const Home = () => {
         <h1>Search Images and News...</h1>
 
         
-        <Carousel className='home' carousel-indicators={false} >
+        <Carousel className='home' >
             <Carousel.Item interval={1500} >
                 <img
                 className="home-image"

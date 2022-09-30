@@ -43,9 +43,9 @@ const SignUp = () => {
 
     }
 
-    console.log(store.searchReducer.signup)
+    // console.log(store.searchReducer.signup)
 
-    console.log(validator.isStrongPassword(data.password))
+    // console.log(validator.isStrongPassword(data.password))
 
 
     const handleClick = () => {

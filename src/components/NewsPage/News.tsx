@@ -7,6 +7,7 @@ import Pagination from '../Pagination/Pagination'
 import Navbar from '../Navbar/Navbar'
 import {useMemo} from 'react'
 import './newsPage.css'
+import ScrollToTop from "react-scroll-to-top";
 
 let PageSize = 10;
 
@@ -48,7 +49,7 @@ const News = () => {
       setCalenderDate(e.currentTarget.value)
     }
 
-    console.log(calenderDate)
+    // console.log(calenderDate)
 
     const api_key = "6104eea333564623828d9604d93a1e22"
   
@@ -140,6 +141,9 @@ const News = () => {
           />
 
       </div>
+
+      <ScrollToTop smooth className='scrollToTop' />
+
     </div>
   )
 }

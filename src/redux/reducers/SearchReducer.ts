@@ -20,7 +20,7 @@ const initialState : State = {
     loading : true
 }
 
-console.log(initialState)
+// console.log(initialState)
 
 export const searchReducer = (store = initialState, action : any) => {
     switch (action.type) {
