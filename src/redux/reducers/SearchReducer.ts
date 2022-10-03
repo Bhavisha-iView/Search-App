@@ -1,11 +1,10 @@
-import { SEARCH_DATA, STORE_DATA, SIGNUP, LOGIN, WEATHER, NEWS, NEWSQUERY, LOADING } from "../actions/SearchAction";
+import { SEARCH_DATA, STORE_DATA, SIGNUP, LOGIN, NEWS, NEWSQUERY, LOADING } from "../actions/SearchAction";
 
 interface State {
     searchQuery : string,
     searchdata : any,
     signup : any,
     login : any,
-    weather : any,
     news : any,
     newsQuery : string,
     loading : boolean
@@ -16,13 +15,12 @@ const initialState : State = {
     searchdata : [],
     signup : [],
     login : [],
-    weather : [],
     news : [],
     newsQuery : "",
     loading : true
 }
 
-console.log(initialState)
+// console.log(initialState)
 
 export const searchReducer = (store = initialState, action : any) => {
     switch (action.type) {
@@ -47,16 +45,6 @@ export const searchReducer = (store = initialState, action : any) => {
                 ...store,
                 login : [{...action.payload}]
             }   
-        // case LOGOUT:
-        //     return {
-        //         ...store,
-        //         logout : !action.payload
-        //     } 
-        case WEATHER:
-            return {
-                ...store,
-                weather : [{...action.payload}]
-            } 
         case NEWSQUERY:
             return {
                 ...store,
