@@ -1,2 +1,2 @@
 # search-app
-hiiii
+Search App for Image Search and News search.
